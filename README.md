@@ -21,7 +21,14 @@
     ```
         npm install --save react-native-vector-icons
     ```
-
+- ### axios
+    ```
+        npm install axios
+    ```
+- ### Image colors: [Ver guía de instalación](https://www.npmjs.com/package/react-native-image-colors).
+    ```
+        npm i react-native-image-colors
+    ```
 
 ## Referencias:
 ### [PokeApi](https://pokeapi.co/).

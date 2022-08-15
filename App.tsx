@@ -1,11 +1,19 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { StatusBar } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigator from './src/navigator/StackNavigator';
 
 const App = () => {
     return (
-        <View>
-            <Text>Pokedex App</Text>
-        </View>
+        <NavigationContainer> 
+            <StatusBar 
+                translucent={true}
+                backgroundColor={'transparent'}
+                networkActivityIndicatorVisible= {false}
+                barStyle='light-content'
+            />
+            <StackNavigator />
+        </NavigationContainer>
     )
 }
 
