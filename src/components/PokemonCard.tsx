@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { TouchableOpacity, View, StyleSheet, Dimensions, Text, Image } from 'react-native';
-import { SimplePokemon } from '../interfaces/pokemonInterfaces';
-import { FadeInImage } from './FadeInImage';
-import { useEffect, useState, useRef } from 'react';
-import { getImageColors } from '../helpers/getImageColors';
 import { useNavigation } from '@react-navigation/native';
-import { capitalName } from '../helpers/capitalName';
+
+import { FadeInImage }    from './FadeInImage';
+import { SimplePokemon }  from '../interfaces/pokemonInterfaces';
+import { getImageColors } from '../helpers/getImageColors';
+import { capitalName }    from '../helpers/capitalName';
 
 interface Props {
     pokemon: SimplePokemon;

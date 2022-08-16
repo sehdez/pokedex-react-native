@@ -1,12 +1,14 @@
 import React from 'react'
 import { View, TouchableOpacity, Image, Animated, StyleSheet } from 'react-native';
-import HeaderTitle from './HeaderTitle';
-import { FadeInImage } from './FadeInImage';
-import { SimplePokemon } from '../interfaces/pokemonInterfaces';
-import Icon from 'react-native-vector-icons/Ionicons';
-import { useAnimationXY } from '../hooks/useAnimationXY';
-import { capitalName } from '../helpers/capitalName';
 import { useNavigation } from '@react-navigation/native';
+
+import Icon from 'react-native-vector-icons/Ionicons';
+
+import HeaderTitle        from './HeaderTitle';
+import { FadeInImage }    from './FadeInImage';
+import { capitalName }    from '../helpers/capitalName';
+import { useAnimationXY } from '../hooks/useAnimationXY';
+import { SimplePokemon }  from '../interfaces/pokemonInterfaces';
 
 interface Props {
     pokemon: SimplePokemon;

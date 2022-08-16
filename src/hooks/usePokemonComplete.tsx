@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { PokemonFull } from '../interfaces/pokemonInterfaces';
-import { pokemonApi } from '../api/pokemonApi';
+
+import { PokemonFull }    from '../interfaces/pokemonInterfaces';
+import { pokemonApi }     from '../api/pokemonApi';
 import { PokemonSpecies } from '../interfaces/SpeciesInterface';
-import { Evolutions } from '../interfaces/evolutionsInterface';
+import { Evolutions }     from '../interfaces/evolutionsInterface';
 
 export const usePokemonComplete = ( id: string ) => {
     const [isLoading, setIsLoading] = useState(true);

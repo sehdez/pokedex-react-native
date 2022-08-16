@@ -1,16 +1,16 @@
 import React from 'react'
-import { StackScreenProps } from '@react-navigation/stack';
-import { View, StyleSheet, Image, Text, ScrollView, ActivityIndicator } from 'react-native';
+import { View, StyleSheet, Image, ActivityIndicator } from 'react-native';
+import { StackScreenProps }   from '@react-navigation/stack';
+import { RootStackParams }    from '../navigator/Tab1';
+import { useSafeAreaInsets }  from 'react-native-safe-area-context';
 
-import { RootStackParams } from '../navigator/StackNavigator';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import HeaderPokemonView from '../components/HeaderPokemonView';
+import HeaderPokemonView      from '../components/HeaderPokemonView';
+import PokemonDetails         from '../components/PokemonDetails';
 import { usePokemonComplete } from '../hooks/usePokemonComplete';
-import PokemonDetails from '../components/PokemonDetails';
 
 interface Props extends StackScreenProps<RootStackParams, 'PokemonScreen'>{}
 
-const PokemonScreen = ( { navigation, route }:Props ) => {
+const PokemonScreen = ( { route }:Props ) => {
     
     const { top } = useSafeAreaInsets()
     const { pokemon, color } = route.params;

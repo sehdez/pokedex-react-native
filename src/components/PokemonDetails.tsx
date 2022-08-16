@@ -1,12 +1,11 @@
 import React from 'react'
 import { View, ScrollView, Text, StyleSheet, ActivityIndicator } from 'react-native';
-import { PokemonFull } from '../interfaces/pokemonInterfaces';
-import { FadeInImage } from './FadeInImage';
+
+import PokemonEvolutions  from './PokemonEvolutions';
+import { capitalName }    from '../helpers/capitalName';
+import { PokemonFull }    from '../interfaces/pokemonInterfaces';
 import { PokemonSpecies } from '../interfaces/SpeciesInterface';
-import { Evolutions } from '../interfaces/evolutionsInterface';
-import { getId } from '../helpers/getIdPokemon';
-import PokemonEvolutions from './PokemonEvolutions';
-import { capitalName } from '../helpers/capitalName';
+import { Evolutions }     from '../interfaces/evolutionsInterface';
 
 interface Props{
     pokemon: PokemonFull;

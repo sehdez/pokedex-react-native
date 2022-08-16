@@ -2,12 +2,11 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator, useWindowDimensions, Image } from 'react-native';
 
-import { FadeInImage } from './FadeInImage';
-import { Evolutions } from '../interfaces/evolutionsInterface';
-
+import { FadeInImage }      from './FadeInImage';
+import { Evolutions }       from '../interfaces/evolutionsInterface';
 import { useSimplePokemon } from '../hooks/useSimplePokemon';
-import { getImage } from '../helpers/getIdPokemon';
-import { capitalName } from '../helpers/capitalName';
+import { getImage }         from '../helpers/getIdPokemon';
+import { capitalName }      from '../helpers/capitalName';
 
 interface Props {
     evolutions: Evolutions;

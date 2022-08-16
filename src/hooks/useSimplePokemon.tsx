@@ -1,9 +1,9 @@
-import { pokemonApi } from '../api/pokemonApi';
-import { PokemonResponse, Result, SimplePokemon } from '../interfaces/pokemonInterfaces';
 import { useState, useRef, useEffect } from 'react';
-import { getId, getImage } from '../helpers/getIdPokemon';
-import { Evolutions } from '../interfaces/evolutionsInterface';
-import { getImageColors } from '../helpers/getImageColors';
+
+import { SimplePokemon }    from '../interfaces/pokemonInterfaces';
+import { Evolutions }       from '../interfaces/evolutionsInterface';
+import { getId, getImage }  from '../helpers/getIdPokemon';
+import { getImageColors }   from '../helpers/getImageColors';
 
 interface Pokemones {
     pokemon1: SimplePokemon;

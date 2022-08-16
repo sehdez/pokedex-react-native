@@ -1,16 +1,27 @@
 import React, { useState } from 'react'
-import { ActivityIndicator, Animated, ImageErrorEventData, ImageStyle, NativeSyntheticEvent, StyleProp, View, StyleSheet, Image } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { 
+    ActivityIndicator, 
+    Animated, 
+    ImageErrorEventData, 
+    ImageStyle, 
+    NativeSyntheticEvent, 
+    StyleProp, 
+    View, 
+    StyleSheet, 
+    Image,
+    TouchableOpacity }  from 'react-native';
+    
 import { useAnimation } from '../hooks/useAnimation';
 
 
 interface Props {
     uri: string;
     style?: StyleProp<ImageStyle>;
+    hidden? : boolean;
     onPress?: () => void;
 }
 
-export const FadeInImage = ({ uri, style = {}, onPress } : Props) => {
+export const FadeInImage = ({ uri, style = {}, hidden = false, onPress } : Props) => {
 
     const { opacity, fadeIn } = useAnimation();
     const [ isLoading, setIsLoading ] = useState( true );
@@ -49,7 +60,8 @@ export const FadeInImage = ({ uri, style = {}, onPress } : Props) => {
                                 onLoad={ finishLoading }
                                 style={{
                                     ...style as any,
-                                    opacity
+                                    opacity,
+                                    tintColor: hidden ? '#fff' : 'none'
                                 }}
                             />
                         )
