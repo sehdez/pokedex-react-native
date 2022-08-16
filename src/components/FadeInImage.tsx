@@ -7,10 +7,11 @@ import { useAnimation } from '../hooks/useAnimation';
 interface Props {
     uri: string;
     style?: StyleProp<ImageStyle>;
+    hidden? : boolean;
     onPress?: () => void;
 }
 
-export const FadeInImage = ({ uri, style = {}, onPress } : Props) => {
+export const FadeInImage = ({ uri, style = {}, hidden = false, onPress } : Props) => {
 
     const { opacity, fadeIn } = useAnimation();
     const [ isLoading, setIsLoading ] = useState( true );
@@ -49,7 +50,8 @@ export const FadeInImage = ({ uri, style = {}, onPress } : Props) => {
                                 onLoad={ finishLoading }
                                 style={{
                                     ...style as any,
-                                    opacity
+                                    opacity,
+                                    tintColor: hidden ? '#fff' : 'none'
                                 }}
                             />
                         )

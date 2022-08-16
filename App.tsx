@@ -1,7 +1,7 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
-import StackNavigator from './src/navigator/StackNavigator';
+import TabNavigator from './src/navigator/TabNavigator';
 
 const App = () => {
     return (
@@ -12,7 +12,7 @@ const App = () => {
                 networkActivityIndicatorVisible= {false}
                 barStyle='light-content'
             />
-            <StackNavigator />
+            <TabNavigator />
         </NavigationContainer>
     )
 }

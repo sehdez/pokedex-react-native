@@ -21,5 +21,18 @@ export const styles = StyleSheet.create({
     text: {
         color:'#fff',
         fontSize:30
+    },
+    buttonsContainer: {
+        alignItems:'center'
+    },
+    button:{
+        justifyContent:'center',
+        alignItems: 'center',
+        width: 300,
+        height:45,
+        borderWidth: 0.3,
+        borderColor: 'rgba(255,255,255,0.7)',
+        borderRadius:10,
+        marginVertical: 10,
     }
 })
