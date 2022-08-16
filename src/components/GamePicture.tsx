@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useRef }    from 'react'
 import { View, StyleSheet } from 'react-native';
-import { FadeInImage } from './FadeInImage';
-import { useRef } from 'react';
+
+import { FadeInImage }      from './FadeInImage';
 
 interface Props {
     id: number,

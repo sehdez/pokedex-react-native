@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { pokemonApi } from '../api/pokemonApi';
 import { PokemonResponse, SimplePokemon, Result } from '../interfaces/pokemonInterfaces';
 

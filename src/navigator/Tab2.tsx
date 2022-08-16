@@ -1,8 +1,9 @@
-import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import PokemonScreen from '../screens/PokemonScreen';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import { RootStackParams } from './Tab1';
-import SearchScreen from '../screens/SearchScreen';
+import PokemonScreen       from '../screens/PokemonScreen';
+import SearchScreen        from '../screens/SearchScreen';
 
 
 const Stack = createStackNavigator<RootStackParams>();

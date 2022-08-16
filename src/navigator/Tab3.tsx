@@ -1,6 +1,7 @@
-import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import GameScreen from '../screens/GameScreen';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import GameScreen    from '../screens/GameScreen';
 import NewGameScreen from '../screens/NewGameScreen';
 
 

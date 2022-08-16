@@ -1,7 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import HomeScreen from '../screens/HomeScreen';
-import PokemonScreen from '../screens/PokemonScreen';
+
+import HomeScreen        from '../screens/HomeScreen';
+import PokemonScreen     from '../screens/PokemonScreen';
 import { SimplePokemon } from '../interfaces/pokemonInterfaces';
 
 export type RootStackParams = {

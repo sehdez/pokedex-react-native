@@ -1,6 +1,16 @@
 import React, { useState } from 'react'
-import { ActivityIndicator, Animated, ImageErrorEventData, ImageStyle, NativeSyntheticEvent, StyleProp, View, StyleSheet, Image } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { 
+    ActivityIndicator, 
+    Animated, 
+    ImageErrorEventData, 
+    ImageStyle, 
+    NativeSyntheticEvent, 
+    StyleProp, 
+    View, 
+    StyleSheet, 
+    Image,
+    TouchableOpacity }  from 'react-native';
+    
 import { useAnimation } from '../hooks/useAnimation';
 
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, TouchableOpacity, Text } from 'react-native';
-import PokebolaBackground from '../components/PokebolaBackground';
-import HeaderTitle from '../components/HeaderTitle';
-import { styles } from '../theme/appTheme';
 import { useNavigation } from '@react-navigation/native';
+
+import PokebolaBackground from '../components/PokebolaBackground';
+import { styles }         from '../theme/appTheme';
 
 const NewGameScreen = () => {
     const { navigate } = useNavigation();

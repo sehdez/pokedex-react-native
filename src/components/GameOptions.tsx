@@ -1,9 +1,9 @@
 import React from 'react'
-import { PokemonArr } from '../hooks/usePokemonOptions';
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
+import { PokemonArr }  from '../hooks/usePokemonOptions';
 import { capitalName } from '../helpers/capitalName';
-import { styles } from '../theme/appTheme';
+import { styles }      from '../theme/appTheme';
 
 interface Props {
     pokemones: PokemonArr[];

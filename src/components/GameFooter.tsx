@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+
+import Icon       from 'react-native-vector-icons/Ionicons';
 import { styles } from '../theme/appTheme';
 
 interface Props {
@@ -9,7 +10,6 @@ interface Props {
     level: number;
 
 }
-
 
 const GameFooter = ( { stages, lives, level}: Props ) => {
     return (

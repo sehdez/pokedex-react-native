@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import React from 'react'
+import { Text, TouchableOpacity, View } from 'react-native';
 
-import { usePokemonOptions } from '../hooks/usePokemonOptions';
 
-import HeaderTitle from '../components/HeaderTitle'
-import { Loading } from '../components/Loading';
-import GamePicture from '../components/GamePicture';
+import HeaderTitle        from '../components/HeaderTitle'
+import { Loading }        from '../components/Loading';
+import GamePicture        from '../components/GamePicture';
 import PokebolaBackground from '../components/PokebolaBackground';
-import GameOptions from '../components/GameOptions';
-import { capitalName } from '../helpers/capitalName';
-import { styles } from '../theme/appTheme';
-import GameFooter from '../components/GameFooter';
+import GameOptions        from '../components/GameOptions';
+import GameFooter         from '../components/GameFooter';
+import { capitalName }    from '../helpers/capitalName';
 import { usePokemonGame } from '../hooks/usePokemonGame';
+import { styles }         from '../theme/appTheme';
 
 
 const GameScreen = () => {

@@ -1,11 +1,10 @@
 import React from 'react'
+import { View, FlatList, ActivityIndicator } from 'react-native';
 
-import { View, Image, FlatList, ActivityIndicator } from 'react-native';
-import { styles } from '../theme/appTheme';
-import HeaderTitle from '../components/HeaderTitle';
+import HeaderTitle             from '../components/HeaderTitle';
+import PokemonCard             from '../components/PokemonCard';
+import PokebolaBackground      from '../components/PokebolaBackground';
 import { usePokemonPaginated } from '../hooks/usePokemonPaginated';
-import PokemonCard from '../components/PokemonCard';
-import PokebolaBackground from '../components/PokebolaBackground';
 
 
 const HomeScreen = () => {

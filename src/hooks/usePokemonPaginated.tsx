@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { pokemonApi } from '../api/pokemonApi';
+
 import { PokemonResponse, SimplePokemon, Result } from '../interfaces/pokemonInterfaces';
-import { getImageColors } from '../helpers/getImageColors';
 
 export const usePokemonPaginated = () => {
     const nextPageUrl = useRef('https://pokeapi.co/api/v2/pokemon?limit=40');

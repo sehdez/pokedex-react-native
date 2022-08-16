@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react'
 import { View, TextInput, StyleSheet } from 'react-native';
+
 import Icon from 'react-native-vector-icons/Ionicons';
+
 import { useDebounceValue } from '../hooks/useDebounceValue';
-import { useState, useEffect } from 'react';
 
 interface Props {
     onDebounce : ( termino: string ) => void

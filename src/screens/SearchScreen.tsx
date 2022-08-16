@@ -2,21 +2,19 @@ import React, { useState, useEffect } from 'react'
 import {
     View,
     StyleSheet,
-    Image,
     TouchableWithoutFeedback,
     Keyboard,
     Dimensions, 
     FlatList } from 'react-native';
 
 
-import HeaderTitle from '../components/HeaderTitle'
-import { styles } from '../theme/appTheme';
-import { InputText } from '../components/InputText';
+import HeaderTitle          from '../components/HeaderTitle'
+import { InputText }        from '../components/InputText';
+import PokemonCard          from '../components/PokemonCard';
+import { Loading }          from '../components/Loading';
+import PokebolaBackground   from '../components/PokebolaBackground';
 import { usePokemonSearch } from '../hooks/usePokemonSearch';
-import PokemonCard from '../components/PokemonCard';
-import { Loading } from '../components/Loading';
-import { SimplePokemon } from '../interfaces/pokemonInterfaces';
-import PokebolaBackground from '../components/PokebolaBackground';
+import { SimplePokemon }    from '../interfaces/pokemonInterfaces';
 
 const { width } = Dimensions.get('window');
 

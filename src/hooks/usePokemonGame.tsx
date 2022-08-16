@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { usePokemonOptions } from './usePokemonOptions';
+import { usePokemonOptions }   from './usePokemonOptions';
 
 interface Game {
     loadNext: boolean;
