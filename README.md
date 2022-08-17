@@ -14,8 +14,7 @@
 ## Dependencias utilizadas:
 - ### Stack Navigator: [Ver guía  de instalación](https://reactnavigation.org/docs/stack-navigator/).
     ```
-        npm install @react-navigation/native react-native-screens react-native-safe-area-context 
-        @react-navigation/stack react-native-gesture-handler @react-native-masked-view/masked-view
+        npm install @react-navigation/native react-native-screens react-native-safe-area-context  @react-navigation/stack react-native-gesture-handler @react-native-masked-view/masked-view
     ```
 - ### Bottom tab navigator: [ver guía de instalación](https://reactnavigation.org/docs/bottom-tab-navigator/)
     ```
