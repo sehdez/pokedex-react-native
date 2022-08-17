@@ -14,8 +14,7 @@
 ## Dependencias utilizadas:
 - ### Stack Navigator: [Ver guía  de instalación](https://reactnavigation.org/docs/stack-navigator/).
     ```
-        npm install @react-navigation/native react-native-screens react-native-safe-area-context 
-        @react-navigation/stack react-native-gesture-handler @react-native-masked-view/masked-view
+        npm install @react-navigation/native react-native-screens react-native-safe-area-context  @react-navigation/stack react-native-gesture-handler @react-native-masked-view/masked-view
     ```
 - ### Bottom tab navigator: [ver guía de instalación](https://reactnavigation.org/docs/bottom-tab-navigator/)
     ```
@@ -32,6 +31,10 @@
 - ### Image colors: [Ver guía de instalación](https://www.npmjs.com/package/react-native-image-colors).
     ```
         npm i react-native-image-colors
+    ```
+- ### Splash Screen: [Ver guía de instalación](https://github.com/crazycodeboy/react-native-splash-screen).
+    ```
+        npm i react-native-splash-screen --save
     ```
 
 ## Referencias:

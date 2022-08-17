@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     },
     text: {
         color:'#fff',
-        fontSize:30
+        fontSize:27
     },
     buttonsContainer: {
         alignItems:'center'
