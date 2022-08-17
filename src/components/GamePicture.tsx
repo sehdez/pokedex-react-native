@@ -39,8 +39,8 @@ const GamePicture = ( { id, hidden = false }: Props ) => {
 }
 const styles = StyleSheet.create({
     img:{
-        height: 190,
-        width : 190
+        height: 280,
+        width : 280
     }
 });
 

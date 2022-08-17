@@ -33,6 +33,10 @@
     ```
         npm i react-native-image-colors
     ```
+- ### Splash Screen: [Ver guía de instalación](https://github.com/crazycodeboy/react-native-splash-screen).
+    ```
+        npm i react-native-splash-screen --save
+    ```
 
 ## Referencias:
 ### [PokeApi](https://pokeapi.co/).

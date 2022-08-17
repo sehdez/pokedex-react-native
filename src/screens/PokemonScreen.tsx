@@ -37,12 +37,6 @@ const PokemonScreen = ( { route }:Props ) => {
                     />
                 )
             }
-            
-
-            <Image 
-                source={ require('../assets/pokemon.png') }
-                style={ styles.pokemonBackground }
-            />
 
         </View>
     )
